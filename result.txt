@@ -1,0 +1,3 @@
+Volume of cube: 150
+Volume of cuboid: 60
+Volume of triangular prism: 36
