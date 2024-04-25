@@ -1,6 +1,6 @@
-const cube = require('./app/cube');
-const cuboid = require('./app/cuboid');
-const triangularPrism = require('./app/triangularPrism');
+const cube = require('./app/utils/cube');
+const cuboid = require('./app/utils/cuboid');
+const triangularPrism = require('./app/utils/triangularPrism');
 
 console.log('Volume of cube:', cube.cubeVolume(5));
 
