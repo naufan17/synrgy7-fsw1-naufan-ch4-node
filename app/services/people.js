@@ -22,4 +22,16 @@ const getDetail = (id) => {
     })
 }
 
-module.exports = { writePeople, readPeople, getDetail }
+const createPeople = (payload) => {
+    fs.readFile('people.json', 'utf8', (err, data) => {
+        const parsedData = JSON.parse(data)
+        parsedData.push(payload);
+        console.log('People data:');
+        console.log(parsedData);
+
+        fs.writeFileSync('people.json', JSON.stringify(parsedData), 'utf8');
+    })
+
+}
+
+module.exports = { writePeople, readPeople, getDetail, createPeople }

@@ -3,7 +3,7 @@
 // const cube = require('./app/utils/cube');
 // const cuboid = require('./app/utils/cuboid');
 // const triangularPrism = require('./app/utils/triangularPrism');
-const { writePeople, readPeople, getDetail } =  require('./app/services/people')
+const { writePeople, readPeople, getDetail, createPeople } =  require('./app/services/people')
 
 // const cubeVolume = cube.cubeVolume(5);
 // const cuboidVolume = cuboid.cuboidVolume(3, 4, 5);
@@ -24,3 +24,4 @@ const { writePeople, readPeople, getDetail } =  require('./app/services/people')
 writePeople();
 readPeople();
 getDetail(4);
+createPeople({ id: 99, name: "Muhammad Naufan", username: "Naufan", email: "mnaufan@gmail.com"});
